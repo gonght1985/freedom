@@ -12,9 +12,9 @@
 	    <!-- 数据库连接池的大小 -->
 	    <property name="connection.pool_size">5</property>
 	    <!-- 每次从数据库中取出并放到JDBC的Statement中的记录条数。Fetch Size设的越大，读数据库的次数越少，速度越快，Fetch Size越小，读数据库的次数越多，速度越慢-->   
-	    <property name="jdbc.fetch_size">50 </property>   
+	    <property name="jdbc.fetch_size">50</property>   
 	    <!--批量插入,删除和更新时每次操作的记录数。Batch Size越大，批量操作的向数据库发送Sql的次数越少，速度就越快，同样耗用内存就越大-->   
-	    <property name="jdbc.batch_size">23 </property>  
+	    <property name="jdbc.batch_size">23</property>  
 	    <!-- SQL 方言 -->
 	    <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 	    <!-- Enable Hibernate's automatic session context management -->
@@ -24,5 +24,7 @@
 	    <!-- 在启动时根据配置更新数据库 -->
 	    <property name="hbm2ddl.auto">update</property>
 	    <mapping class="com.zdsoft.freedom.test.model.User"/><!-- 注册我们的实体映射类-->
+	    <mapping class="com.zdsoft.freedom.test.model.Account"/>
+	    <mapping class="com.zdsoft.freedom.test.model.Organization"/>
 	</session-factory>
 </hibernate-configuration>
