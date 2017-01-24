@@ -26,5 +26,7 @@
 	    <mapping class="com.zdsoft.freedom.test.model.User"/><!-- 注册我们的实体映射类-->
 	    <mapping class="com.zdsoft.freedom.test.model.Account"/>
 	    <mapping class="com.zdsoft.freedom.test.model.Organization"/>
+	    <mapping class="com.zdsoft.freedom.test.model.Client"/>
+	    <mapping class="com.zdsoft.freedom.test.model.ClientOwner"/>
 	</session-factory>
 </hibernate-configuration>
